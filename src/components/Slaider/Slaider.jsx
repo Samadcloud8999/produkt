@@ -18,29 +18,29 @@ export const Slaider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const cardsPerPage = 3;
 
-  // Функция для скролла влево
+ 
   const scrollLeft = () => {
     setCurrentIndex((prev) =>
       prev === 0 ? Math.floor((allCards.length - 1) / cardsPerPage) * cardsPerPage : prev - cardsPerPage
     );
   };
 
-  // Функция для скролла вправо
+  
   const scrollRight = () => {
     setCurrentIndex((prev) =>
       prev + cardsPerPage >= allCards.length ? 0 : prev + cardsPerPage
     );
   };
 
-  // Автопрокрутка слайдов
+  
   useEffect(() => {
     const interval = setInterval(() => {
       scrollRight();
-    }, 3000); // Переход через каждые 3 секунды
+    }, 3000);
     return () => clearInterval(interval);
   }, [currentIndex]);
 
-  // Получаем 3 карточки для отображения
+  
   const visibleCards = allCards.slice(currentIndex, currentIndex + cardsPerPage);
 
   return (
@@ -58,7 +58,7 @@ export const Slaider = () => {
             <div className={sl.petCard} key={i}>
               <div className={sl.petImage} style={{ backgroundImage: `url(${card.img})` }}></div>
               <h3>{card.name}</h3>
-              <button className={sl.learnMore}>Learn more</button>
+              <button className={sl.learnMore}>Хочу помочь</button>
             </div>
           ))}
         </div>
@@ -67,7 +67,7 @@ export const Slaider = () => {
         </button>
       </div>
 
-      <button className={sl.getToKnow}>Get to know the rest</button>
+      <button className={sl.getToKnow}>Забрать</button>
     </div>
   );
 };
