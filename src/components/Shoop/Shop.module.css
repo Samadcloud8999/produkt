@@ -1,3 +1,8 @@
+* {
+  list-style-type: none;
+  text-decoration: none;
+}
+
 .container {
   margin: auto;
 }
@@ -15,7 +20,7 @@
   padding: 80px 0 100px;
 }
 
-.shopTitle {
+.shopTittle {
   padding-bottom: 60px;
   text-align: center;
   font-size: 34px;
@@ -31,6 +36,9 @@
 }
 
 .shopIcon-item {
+  width: 82px;
+  height: 113px;
+  text-align: center;
   border-radius: 10px;
   background-color: var(--dark-bg);
 }
@@ -48,6 +56,5 @@
 }
 
 .shopIcon-text {
-  text-align: center;
   line-height: 1.3;
 }
