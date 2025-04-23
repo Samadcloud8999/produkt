@@ -63,7 +63,7 @@ export const Shop = () => {
     <>
       <div className={shopProduct["shop"]}>
         <div className={shopProduct["container"]}>
-          <div className={shopProduct["shopWrapper"]}>
+          <div className={shopProduct["shopContent"]}>
             <p className={shopProduct["shopTittle"]}>
               How you can help <br />
               our shelter
