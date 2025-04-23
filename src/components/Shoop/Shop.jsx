@@ -68,8 +68,14 @@ export const Shop = () => {
               How you can help <br />
               our shelter
             </p>
-            <ul>
-              <li></li>
+            <ul className={shopProduct.shopIcon - list}>
+              {shopIcon.map((icon) => (
+                <li className={shopProduct.shopIcon - item} key={icon.id}>
+                  <a className={shopProduct.shopIcon - link} href={icon.path}>
+                    {icon.title}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
