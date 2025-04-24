@@ -9,7 +9,6 @@
 
 .shop {
   color: #545454;
-  max-height: 61, 2vh;
   display: flex;
   justify-content: center;
 }
@@ -28,18 +27,15 @@
 
 .shopIcon-list {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
   column-gap: 120px;
   row-gap: 55px;
 }
 
 .shopIcon-item {
-  width: 82px;
-  height: 113px;
   text-align: center;
   border-radius: 10px;
-  background-color: var(--dark-bg);
 }
 
 .shopIcon-item:hover {
@@ -48,8 +44,6 @@
 }
 
 .shopIcon-img {
-  max-width: 82px;
-  max-height: 113px;
   padding: 10px;
   border-radius: 15px;
 }
