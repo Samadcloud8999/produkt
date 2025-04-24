@@ -4,18 +4,18 @@
 // import { Shop } from "./components/Shoop/Shop";
 // import { Aboutdog } from "./components/Aboutdog/Aboutdog";
 // import { Footer } from "./components/Foooter/Footer";
-import MyRoutes from "./routes/MyRoutes";
+import MyRoutes from "../../routes/MyRoutes";
 
 function App() {
   return (
     <>
-      <MyRoutes />
-      {/* <Header />
+     
+       <Header />
       <About />
       <Slaider />
       <Shop />
       <Aboutdog />
-      <Footer /> */}
+      <Footer /> 
     </>
   );
 }
