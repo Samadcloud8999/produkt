@@ -1,8 +1,3 @@
-body {
-  margin: 0;
-  font-family: "Roboto", sans-serif;
-}
-
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -15,7 +10,7 @@ body {
   margin: 0;
 }
 
-.header-top {
+.headerTop {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -35,7 +30,11 @@ body {
   padding: 0 0 0 145px;
 }
 
-.nav ul {
+.nav {
+  /* No additional styles needed for nav container */
+}
+
+.navList {
   display: flex;
   gap: 32px;
   list-style: none;
@@ -43,7 +42,7 @@ body {
   padding: 0;
 }
 
-.nav a {
+.navItem a {
   color: #f5f5f5;
   text-decoration: none;
   font-size: 0.875rem;
@@ -51,7 +50,7 @@ body {
   padding-bottom: 4px;
 }
 
-.nav li.active a::after {
+.navItem.active a::after {
   content: "";
   position: absolute;
   left: 0;
@@ -61,7 +60,7 @@ body {
   background-color: #f5d6b4;
 }
 
-.nav a:hover {
+.navItem a:hover {
   opacity: 0.8;
 }
 
@@ -72,7 +71,7 @@ body {
   margin: 0;
 }
 
-.banner-content {
+.bannerContent {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -80,20 +79,20 @@ body {
   padding: 40px;
 }
 
-.banner-text {
+.bannerText {
   max-width: 600px;
   padding: 20px;
   border-radius: 10px;
 }
 
-.banner-text h2 {
+.title {
   font-family: "Playfair Display", serif;
   font-size: 3rem;
   margin: 0 0 16px;
   line-height: 1.2;
 }
 
-.banner-text p {
+.description {
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 24px;
@@ -113,9 +112,8 @@ body {
   opacity: 0.9;
 }
 
-.banner-dog {
+.bannerDog {
   width: 698px;
-  height: 728px;
   height: auto;
   border-radius: 10px;
 }
