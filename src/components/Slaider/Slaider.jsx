@@ -58,7 +58,7 @@ export const Slaider = () => {
             <div className={sl.petCard} key={i}>
               <div className={sl.petImage} style={{ backgroundImage: `url(${card.img})` }}></div>
               <h3>{card.name}</h3>
-              <button className={sl.learnMore}>Хочу помочь</button>
+              <button className={sl.learnMore}>Забрать</button>
             </div>
           ))}
         </div>
@@ -67,7 +67,7 @@ export const Slaider = () => {
         </button>
       </div>
 
-      <button className={sl.getToKnow}>Забрать</button>
+      <button className={sl.getToKnow}>Хочу помочь</button>
     </div>
   );
 };
