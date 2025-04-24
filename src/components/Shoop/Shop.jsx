@@ -73,7 +73,8 @@ export const Shop = () => {
                 <li className={shopProduct["shopIcon-item"]} key={icon.id}>
                   <img
                     className={shopProduct["shopIcon-link"]}
-                    src={icon.icon} alt="shopIcon"
+                    src={icon.icon}
+                    alt="shopIcon"
                   ></img>
                   <p className={shopProduct["shopIcon-text"]}> {icon.title} </p>
                 </li>

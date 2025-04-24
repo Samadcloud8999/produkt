@@ -5,6 +5,7 @@ import texture from "../../assets/img/texture.png";
 import background from "../../assets/img/background.jpg";
 import dog from "../../assets/img/dog.png";
 import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const navItems = [
   { label: "About the shelter", to: "/about" },
