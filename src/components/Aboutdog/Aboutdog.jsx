@@ -5,17 +5,6 @@ import creditka from "../../assets/img/creditkaNumber.png";
 export const Aboutdog = () => {
   return (
     <>
-      {/* <p>
-        You can also <br />
-        make a donation
-      </p>
-      <p className={styles.banktionBox}>
-        Name of the bank / Type of bank account
-      </p>
-      <div className={styles.account}>
-        <img src={creditka} alt="Card icon" />
-      </div> */}
-
       <section className={styles.aboutSection}>
         <div className={styles.aboutContainer}>
           <div className={styles.imageWrapper}>
