@@ -1,8 +1,43 @@
-import React from 'react'
-import ab from "./Aboutdog.module.css"
+import styles from "./Aboutdog.module.css";
+import puppy from "../../assets/img/puppy.png";
+import creditka from "../../assets/img/creditkaNumber.png";
 
 export const Aboutdog = () => {
   return (
-    <>Aboutdog</>
-  )
-}
+    <>
+      {/* <p>
+        You can also <br />
+        make a donation
+      </p>
+      <p className={styles.banktionBox}>
+        Name of the bank / Type of bank account
+      </p>
+      <div className={styles.account}>
+        <img src={creditka} alt="Card icon" />
+      </div> */}
+
+      <section className={styles.aboutSection}>
+        <div className={styles.aboutContainer}>
+          <div className={styles.imageWrapper}>
+            <img className={styles.petsImage} src={puppy} alt="Cute puppy" />
+          </div>
+          <div className={styles.textWrapper}>
+            <p className={styles.subtitle}>You can also make a donation</p>
+            <h3 className={styles.title}>
+              Name of the bank / Type of bank account
+            </h3>
+            <div className={styles.aboutDogIcon}>
+              <img src={creditka} alt="Credit card icon" />
+            </div>
+            <p className={styles.description}>
+              Legal information and lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed
+              ac diam. Praesent ultrices maximus tortor et vulputate. Interdum
+              et malesuada fames ac ante ipsum primis in faucibus.
+            </p>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+};
