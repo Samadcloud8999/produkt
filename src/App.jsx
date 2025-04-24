@@ -5,6 +5,8 @@
 // import { Aboutdog } from "./components/Aboutdog/Aboutdog";
 // import { Footer } from "./components/Foooter/Footer";import MyRoutes from "./routes/MyRoutes";
 
+import MyRoutes from "./routes/MyRoutes";
+
 function App() {
   return (
     <>
