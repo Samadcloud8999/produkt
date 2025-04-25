@@ -30,8 +30,6 @@
   padding: 0 0 0 190px;
 }
 
-
-
 .navList {
   display: flex;
   gap: 32px;
@@ -114,4 +112,96 @@
   width: 698px;
   height: auto;
   border-radius: 10px;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+    padding: 0 20px;
+  }
+
+  .bannerDog {
+    width: 500px;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+
+  .bannerContent {
+    padding: 30px;
+    gap: 30px;
+  }
+
+  .bannerDog {
+    width: 400px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .logo {
+    padding: 0 0 0 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .headerTop {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .navList {
+    gap: 20px;
+  }
+
+  .bannerContent {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .bannerText {
+    padding: 10px;
+  }
+
+  .bannerDog {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .logo {
+    padding: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .navList {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .headerTop {
+    padding: 15px;
+  }
 }
