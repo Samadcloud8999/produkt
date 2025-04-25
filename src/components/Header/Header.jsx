@@ -5,13 +5,12 @@ import texture from "../../assets/img/texture.png";
 import background from "../../assets/img/background.jpg";
 import dog from "../../assets/img/dog.png";
 import { Link } from "react-router-dom";
-// import { Link } from "react-router-dom";
 
 const navItems = [
-  { label: "About the shelter", to: "/about" },
-  { label: "Our pets", to: "/our" },
-  { label: "Help the shelter", to: "/helps" },
-  { label: "Contacts", to: "/contacts" },
+  { label: "About the shelter", href: "/about" },
+  { label: "Our pets", href: "/pets" },
+  { label: "Help the shelter", href: "/help" },
+  { label: "Contacts", href: "/contacts" },
 ];
 
 export const Header = () => {
@@ -34,7 +33,7 @@ export const Header = () => {
                   index === 0 ? Hdrcss.active : ""
                 }`}
               >
-                <Link to={item.to} className={Hdrcss.navLink}>
+                <Link to={item.href} className={Hdrcss.navLink}>
                   {item.label}
                 </Link>
               </li>
