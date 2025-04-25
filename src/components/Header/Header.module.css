@@ -46,17 +46,28 @@
   font-size: 0.875rem;
   position: relative;
   padding-bottom: 4px;
+  transition: color 0.3s ease;
 }
 
-.navItem.active a::after {
+.navItem a::after {
   content: "";
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 100%;
+  width: 0%; 
   height: 2px;
   background-color: #f5d6b4;
+  transition: width 0.3s ease;
 }
+
+.navItem a:hover::after {
+  width: 100%; 
+}
+
+.navItem.active a::after {
+  width: 100%; 
+}
+
 
 .navItem a:hover {
   opacity: 0.8;
@@ -114,4 +125,70 @@
   width: 698px;
   height: auto;
   border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .headerTop {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+
+  .logo {
+    padding-left: 0;
+  }
+
+  .navList {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .bannerContent {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .bannerDog {
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+  }
+
+  .bannerText {
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 0.95rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.6rem;
+  }
+
+  .description {
+    font-size: 0.875rem;
+  }
+
+  .bannerDog {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .btn {
+    font-size: 0.85rem;
+    padding: 8px 16px;
+  }
 }
