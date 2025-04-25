@@ -1,4 +1,3 @@
-import { Header } from "./components/Header/Header";
 import { About } from "./components/About/About";
 import { Slaider } from "./components/Slaider/Slaider";
 import { Shop } from "./components/Shoop/Shop";
