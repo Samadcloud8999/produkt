@@ -1,0 +1,53 @@
+* {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.container {
+  margin: auto;
+}
+
+.shop {
+  color: #545454;
+  display: flex;
+  justify-content: center;
+}
+
+.shopContent {
+  max-width: 1026px;
+  padding: 80px 0 100px;
+}
+
+.shopTittle {
+  padding-bottom: 60px;
+  text-align: center;
+  font-size: 34px;
+  line-height: 1.3;
+}
+
+.shopIcon-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 120px;
+  row-gap: 55px;
+}
+
+.shopIcon-item {
+  text-align: center;
+  border-radius: 10px;
+}
+
+.shopIcon-item:hover {
+  position: relative;
+  top: 3px;
+}
+
+.shopIcon-img {
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.shopIcon-text {
+  line-height: 1.3;
+}
