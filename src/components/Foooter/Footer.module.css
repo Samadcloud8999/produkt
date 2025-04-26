@@ -1,4 +1,29 @@
-.text {
-    color: #6f6e6e;
-    font-size: 20px;
-}
+.contactSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #3c2d1d, #1a1a1a);
+    color: #f5e8d6;
+    padding: 40px;
+    font-family: Georgia, serif;
+  }
+  
+  .contactBlock {
+    flex: 1;
+    padding: 0 20px;
+  }
+  
+  .contactBlock h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .contactInfo {
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+  
+  .dogImage {
+    max-width: 200px;
+  }
+  
