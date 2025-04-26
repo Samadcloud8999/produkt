@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <MyRoutes />
-      {/* <About /> */}
+       <About /> 
       <Slaider />
       <Shop />
       <Aboutdog />

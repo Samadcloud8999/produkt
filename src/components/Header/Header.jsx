@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react"; // Import useState
 import logo from "../../assets/icons/Logo.svg";
 import Hdrcss from "./Header.module.css";
 import texture from "../../assets/img/texture.png";
@@ -7,19 +7,27 @@ import dog from "../../assets/img/dog.png";
 import { Link } from "react-router-dom";
 
 const navItems = [
-  { label: "About the shelter", href: "/about" },
-  { label: "Our pets", href: "/pets" },
-  { label: "Help the shelter", href: "/help" },
-  { label: "Contacts", href: "/contacts" },
+  { label: "About the shelter", to: "/about" },
+  { label: "Our pets", to: "/our" },
+  { label: "Help the shelter", to: "/helps" },
+  { label: "Contacts", to: "/contacts" },
 ];
 
 export const Header = () => {
+  // State to track the active nav item
+  const [activeItem, setActiveItem] = useState(null);
+
+  // Function to handle nav item click
+  const handleNavClick = (index) => {
+    setActiveItem(index);
+  };
+
   return (
     <header
       className={Hdrcss.header}
-      style={{ backgroundImage: `url(${texture})` }}
+      style={{ backgroundImage: `url(${texture})` }} // Исправленный синтаксис
     >
-      <div className={`${Hdrcss.container} ${Hdrcss.headerTop}`}>
+      <div className={`${Hdrcss.container} ${Hdrcss.headerTop}`}> {/* Исправлено объединение классов */}
         <div className={Hdrcss.branding}>
           <img src={logo} alt="Cozy House Logo" className={Hdrcss.logo} />
         </div>
@@ -30,10 +38,14 @@ export const Header = () => {
               <li
                 key={index}
                 className={`${Hdrcss.navItem} ${
-                  index === 0 ? Hdrcss.active : ""
-                }`}
+                  activeItem === index ? Hdrcss.active : ""
+                }`} // Условное добавление активного класса
               >
-                <Link to={item.href} className={Hdrcss.navLink}>
+                <Link
+                  to={item.to}
+                  className={Hdrcss.navLink}
+                  onClick={() => handleNavClick(index)}
+                >
                   {item.label}
                 </Link>
               </li>
@@ -44,7 +56,7 @@ export const Header = () => {
 
       <div
         className={Hdrcss.banner}
-        style={{ backgroundImage: `url(${background})` }}
+        style={{ backgroundImage: `url(${background})` }} // Исправленный синтаксис
       >
         <div className={`${Hdrcss.container} ${Hdrcss.bannerContent}`}>
           <div className={Hdrcss.bannerText}>

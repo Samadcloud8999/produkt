@@ -52,20 +52,15 @@
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 0%; 
+  width: 0;
   height: 2px;
   background-color: #f5d6b4;
   transition: width 0.3s ease;
 }
 
-.navItem a:hover::after {
-  width: 100%; 
-}
-
 .navItem.active a::after {
-  width: 100%; 
+  width: 100%;
 }
-
 
 .navItem a:hover {
   opacity: 0.8;
