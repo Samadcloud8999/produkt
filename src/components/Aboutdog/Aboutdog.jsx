@@ -1,6 +1,6 @@
 import styles from "./Aboutdog.module.css";
 import puppy from "../../assets/img/puppy.png";
-import creditka from "../../assets/img/creditkaNumber.png";
+import creditka from "../../assets/img/СreditkaNumber.png";
 
 export const Aboutdog = () => {
   return (
