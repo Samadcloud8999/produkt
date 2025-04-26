@@ -11,7 +11,7 @@ const MyRoutes = () => {
     <>
       <Header />
       <Routes>
-        <Route path="/about" element={<About />} />
+        {/* <Route path="/about" element={<About />} /> */}
         <Route path="/our" element={<Slaider />} />
         <Route path="/helps" element={<Shop />} />
         <Route path="/contacts" element={<Aboutdog />} />
