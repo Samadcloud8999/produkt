@@ -4,15 +4,17 @@ import { Shop } from "./components/Shoop/Shop";
 import { Aboutdog } from "./components/Aboutdog/Aboutdog";
 import { Footer } from "./components/Foooter/Footer";
 import MyRoutes from "./routes/MyRoutes";
+import Register from "./components/Regis/Register";
 
 function App() {
   return (
     <>
       <MyRoutes />
-      <About />
+      {/* <About /> */}
       <Slaider />
       <Shop />
       <Aboutdog />
+      <Register />
       <Footer />
     </>
   );
